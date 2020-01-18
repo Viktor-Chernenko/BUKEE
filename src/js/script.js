@@ -18,9 +18,14 @@ $(document).ready(function(){
         return nav_mobile.toggleClass("active"), $(".header-nav__list").slideToggle(), !1
     })
 
-    $("a[href^='#info-author']").click(function(){
+    $("a[href^='#info-author'], a[href^='#content'], a[href^='#book'], a[href^='#contact'], a[href^='#client']").click(function(){
       var _href = $(this).attr("href");
       $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
       return false;
     });
+
+    $("#btn_show_about_the_book").click(function() {
+      $(this).hide();
+        $(".table-of-contents__list_hide").slideDown(300);
+    })
 });

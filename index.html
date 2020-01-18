@@ -68,11 +68,11 @@
                         <ul class="header-nav__list">
                             <li class="header-nav__item header-nav__item_active"><a href="" class="header-nav__link header-nav__link">Home</a></li>
                             <li class="header-nav__item"><a href="#info-author" class="header-nav__link">About</a></li>
-                            <li class="header-nav__item"><a href="#contents" class="header-nav__link">Contents</a></li>
+                            <li class="header-nav__item"><a href="#content" class="header-nav__link">Contents</a></li>
                             <li class="header-nav__item"><a href="#books" class="header-nav__link">Books</a></li>
-                            <li class="header-nav__item"><a href="#education" class="header-nav__link">Education</a></li>
-                            <li class="header-nav__item"><a href="#skills" class="header-nav__link">Skills</a></li>
-                            <li class="header-nav__item"><a href="#portfolio" class="header-nav__link">Portfolio</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Education</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Skills</a></li>
+                            <li class="header-nav__item"><a href="#" class="header-nav__link">Portfolio</a></li>
                             <li class="header-nav__item"><a href="#clients" class="header-nav__link">Clients</a></li>
                             <li class="header-nav__item"><a href="#contact" class="header-nav__link">Contact</a></li>
                         </ul>
@@ -132,7 +132,7 @@
         </div>
     </section>
 
-    <section class="book-contents wow bounceInRight" id="books" data-wow-duration="1s" data-wow-delay=".5s">
+    <section class="book-contents wow bounceInRight" id="content" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="book-contents__body">
             <div class="book-contents__title-box">
                 <h2 class="book-contents__title">Book Contents</h2>
@@ -163,15 +163,27 @@
                         <li class="table-of-contents__item table-of-contents__item_hide">Consectetur adipisicing elit</li>
                         <li class="table-of-contents__item table-of-contents__item_hide">Labore et dolore magna</li>
                     </ol>
+                    <ol type="1" class="table-of-contents__list table-of-contents__list_hide">
+                        <li class="table-of-contents__item ">Lorem ipsum dolor sit amet</li>
+                        <li class="table-of-contents__item ">Consectetur adipisicing elit</li>
+                        <li class="table-of-contents__item ">Labore et dolore magna</li>
+                        <li class="table-of-contents__item ">Consectetur adipisicing elit</li>
+                        <li class="table-of-contents__item ">Labore et dolore magna</li>
+                        <li class="table-of-contents__item table-of-contents__item_hide">Lorem ipsum dolor sit amet</li>
+                        <li class="table-of-contents__item table-of-contents__item_hide">Consectetur adipisicing elit</li>
+                        <li class="table-of-contents__item table-of-contents__item_hide">Labore et dolore magna</li>
+                        <li class="table-of-contents__item table-of-contents__item_hide">Consectetur adipisicing elit</li>
+                        <li class="table-of-contents__item table-of-contents__item_hide">Labore et dolore magna</li>
+                    </ol>
                     <div class="table-of-contents__btn-box">
-                        <a class="table-of-contents__btn">More</a>
+                        <a class="table-of-contents__btn" id="btn_show_about_the_book">More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="other-book wow bounceInRight" data-wow-duration="1s" data-wow-delay=".5s">
+    <section class="other-book wow bounce" id="books" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="other-book__body">
             <div class="other-book__box-title">
                 <h2 class="other-book__title">Other Books</h2>
@@ -180,39 +192,39 @@
             
             <div class="other-book__box-content">
                 <div class="other-book__item">
-                    <div class="book-box">
+                    <div class="book-box wow jackInTheBox">
                         <svg class="book-box__img" id="book_img" data-name="book img" xmlns="http://www.w3.org/2000/svg" width="269" height="409"><defs><style>.cls-2{fill:#65e496;fill-rule:evenodd}</style></defs><rect id="book" width="268.938" height="409" rx="5" ry="5" fill="#44444f"/><path id="Rectangle_11_copy_5" data-name="Rectangle 11 copy 5" class="cls-2" d="M249.672 294.169l105.655-61a5 5 0 115 8.659l-105.655 61a5 5 0 11-5-8.659z"/><path id="Rectangle_11_copy_4" data-name="Rectangle 11 copy 4" class="cls-2" d="M249.672 267.17l105.655-61a5 5 0 115 8.661l-105.655 61a5 5 0 11-5-8.661z"/><path fill="#3d3d47" d="M0 0h37.906v409H0z"/></svg>
                         <h3 class="book-box__title">Inception</h3>
                         <span class="book-box__subtitle">Books are the best friends</span>
                         <span class="book-box__author">By Emma Anderson</span>
                     </div>
-                    <div class="book-info wow tada" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="book-info wow tada" data-wow-duration="1s" data-wow-delay="1.5s">
                         <h3 class="book-info__title">Inception</h3>
                         <span class="book-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
                         <div class="book-info__link-box"><a href="" class="book-info__link">READ MORE</a></div>
                     </div>
                 </div>
                 <div class="other-book__item">
-                    <div class="book-box">
+                    <div class="book-box wow jackInTheBox">
                         <svg class="book-box__img" id="book_img" data-name="book img" xmlns="http://www.w3.org/2000/svg" width="269" height="409"><defs><style>.cls-2{fill:#65e496;fill-rule:evenodd}</style></defs><rect id="book" width="268.938" height="409" rx="5" ry="5" fill="#44444f"/><path id="Rectangle_11_copy_5" data-name="Rectangle 11 copy 5" class="cls-2" d="M249.672 294.169l105.655-61a5 5 0 115 8.659l-105.655 61a5 5 0 11-5-8.659z"/><path id="Rectangle_11_copy_4" data-name="Rectangle 11 copy 4" class="cls-2" d="M249.672 267.17l105.655-61a5 5 0 115 8.661l-105.655 61a5 5 0 11-5-8.661z"/><path fill="#3d3d47" d="M0 0h37.906v409H0z"/></svg>
                         <h3 class="book-box__title">Fight Club</h3>
                         <span class="book-box__subtitle">Books are the best friends</span>
                         <span class="book-box__author">By Emma Anderson</span>
                     </div>
-                    <div class="book-info wow tada" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="book-info wow tada" data-wow-duration="1s" data-wow-delay="1.5s">
                         <h3 class="book-info__title">Fight Club</h3>
                         <span class="book-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
                         <div class="book-info__link-box"><a href="" class="book-info__link">READ MORE</a></div>
                     </div>
                 </div>
                 <div class="other-book__item">
-                    <div class="book-box">
+                    <div class="book-box wow jackInTheBox">
                         <svg class="book-box__img" id="book_img" data-name="book img" xmlns="http://www.w3.org/2000/svg" width="269" height="409"><defs><style>.cls-2{fill:#65e496;fill-rule:evenodd}</style></defs><rect id="book" width="268.938" height="409" rx="5" ry="5" fill="#44444f"/><path id="Rectangle_11_copy_5" data-name="Rectangle 11 copy 5" class="cls-2" d="M249.672 294.169l105.655-61a5 5 0 115 8.659l-105.655 61a5 5 0 11-5-8.659z"/><path id="Rectangle_11_copy_4" data-name="Rectangle 11 copy 4" class="cls-2" d="M249.672 267.17l105.655-61a5 5 0 115 8.661l-105.655 61a5 5 0 11-5-8.661z"/><path fill="#3d3d47" d="M0 0h37.906v409H0z"/></svg>
                         <h3 class="book-box__title">Daredevils</h3>
                         <span class="book-box__subtitle">Books are the best friends</span>
                         <span class="book-box__author">By Emma Anderson</span>
                     </div>
-                    <div class="book-info wow tada" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="book-info wow tada" data-wow-duration="1s" data-wow-delay="1.5s">
                         <h3 class="book-info__title">Daredevils</h3>
                         <span class="book-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
                         <div class="book-info__link-box"><a href="" class="book-info__link">READ MORE</a></div>
