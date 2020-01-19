@@ -1,18 +1,20 @@
 
- wow = new WOW(
-  {
-    offset:       80,         
-    mobile:       true,      
-    live:         true       
-  }
-)
-wow.init();
 
 $(document).ready(function(){
   $('.reviews-slider').slick({
       arrows: false,
       dots: true
   });
+
+  
+  wow = new WOW(
+  {
+    offset:       80,         
+    mobile:       true,      
+    live:         true       
+  })
+  
+  wow.init();
 
     if($(window).width() < 800) {
       $('.wow').removeClass('bounceInRight tada');

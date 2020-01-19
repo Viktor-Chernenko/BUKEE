@@ -452,6 +452,7 @@ body {
                 position: relative;
                 display: none;
                 margin-top: 50px;
+                counter-reset: item 10;
 
                 &::after {
                     position: absolute;
@@ -501,10 +502,6 @@ body {
 
             &:hover::before {
                 background: $bg-btn-hover;
-            }
-
-            &_active {
-                display: block;
             }
         }
 
