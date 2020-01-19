@@ -9,7 +9,7 @@ $(document).ready(function(){
   
   wow = new WOW(
   {
-    offset:       80,         
+    offset:       100,         
     mobile:       true,      
     live:         true       
   })
