@@ -21,9 +21,13 @@ $(document).ready(function(){
     }
 
     if($(window).width() < 1000) {
-      var nav_mobile = $(".header-nav-mobile, .header-nav__item, .header-nav__link");
+      var nav_mobile = $(".header-nav-mobile");
       nav_mobile.click(function () {
-        return nav_mobile.toggleClass("active"), $(".header-nav").slideToggle(), !1
+        return nav_mobile.toggleClass("active"), $(".header-nav").slideToggle(), !1,
+
+        $(".header-nav__item, .header-nav__link").click(function() {
+          $(".header-nav-mobile").removeClass("active"), $(".header-nav").hide();
+        });
       })
     }
 
