@@ -16,7 +16,7 @@ $(document).ready(function(){
   
   wow.init();
 
-    if($(window).width() < 800) {
+    if($(window).width() < 1025) {
       $('.wow').removeClass('bounceInRight tada');
     }
 
