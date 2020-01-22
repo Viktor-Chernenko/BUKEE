@@ -20,17 +20,12 @@ $(document).ready(function(){
       $('.wow').removeClass('bounceInRight tada');
     }
 
-    var nav_mobile = $(".header-nav-mobile");
-    nav_mobile.click(function () {
-        return nav_mobile.toggleClass("active"), $(".header-nav__list").slideToggle(), !1
-    })
-
-    $('.header-nav__item, .header-nav__link').click(function() {
-      if($(".header-nav-mobile").hasClass("active")) {
-        return nav_mobile.toggleClass("active"), $(".header-nav__list").hide(), !1
-      }
-    })
-
+    if($(window).width() < 1000) {
+      var nav_mobile = $(".header-nav-mobile, .header-nav__item, .header-nav__link");
+      nav_mobile.click(function () {
+        return nav_mobile.toggleClass("active"), $(".header-nav").slideToggle(), !1
+      })
+    }
 
     $("a[href^='#info-author'], a[href^='#content'], a[href^='#book'], a[href^='#contact'], a[href^='#client']").click(function(){
       var _href = $(this).attr("href");
