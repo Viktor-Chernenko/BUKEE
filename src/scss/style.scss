@@ -1177,11 +1177,20 @@ body {
             right: 0;
             left: 0;
             z-index: 100;
-            display: none;
+            visibility: hidden;
+            transform: translateY(-30px);
+            opacity: 0;
             width: 100%;
             max-width: 100%;
             height: 85%;
             max-height: 100%;
+
+            &_active {
+                visibility:visible;
+                transform: translateX(0);
+                opacity: 1;
+                transition: .3s;
+            }
 
             &__list {
                 display: flex;
